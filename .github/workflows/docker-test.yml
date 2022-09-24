@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.dev --tag daseeds/docker-react-test:$(date +%s)
     - name: Run tests
-      run: docker run -e CI=true daseeds/docker-react-test:$(date +%s)
+      run: docker run -e CI=true daseeds/docker-react-test
